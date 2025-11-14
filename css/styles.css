@@ -370,7 +370,10 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     margin-top: 3rem;
+    justify-content: center; /* centre horizontalement l’ensemble */
+    align-items: start; /* optionnel : aligne en haut les colonnes */
 }
+
 
 .contact-form {
     background: #f9f9f9;
