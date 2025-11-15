@@ -532,19 +532,23 @@ footer {
         right: 0;
         background: white;
         flex-direction: column;
-        padding: 1rem 2rem;
         box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+        /* Fix complet */
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease-in-out;
+        padding: 0; /* <-- empêche le menu d'apparaître quand fermé */
+        transition: max-height 0.35s ease, padding 0.3s ease;
     }
 
     .nav-menu.active {
-        max-height: 400px;
+        padding: 1rem 2rem; /* <-- affiché uniquement quand ouvert */
+        max-height: 600px; /* assez grand pour tous les liens */
     }
 
     .nav-menu li {
-        padding: 0.5rem 0;
+        padding: 0.8rem 0;
+        text-align: center;
     }
 
     .hero-content h1 {
